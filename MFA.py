@@ -3,7 +3,7 @@ from math import sqrt
 import numpy as np
 import sys
 
-# Get the 10 figure grid references for user
+# Get the 10 figure grid references for user (Mortar Line)
 def get_my_grids():
     my_grid_x = int(input("What is your 5 figure X asis reference? "))
     my_grid_y = int(input("What is your 5 figure Y asis reference? "))
