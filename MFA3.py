@@ -27,7 +27,7 @@ def get_grids():
             continue
         else:
             break
-    print("\nYour grid is: ",grid_x, " ", grid_y, "\n")
+    print("\n10 figure grid is: ",grid_x, " ", grid_y, "\n")
     return grid_x, grid_y 
 
 
