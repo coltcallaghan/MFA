@@ -7,7 +7,7 @@ import sys
 def get_grids():
     while True:
         try:
-            grid_x = int(input("What is the 5 figure X asis reference? "))
+            grid_x = int(input("What is the 5 figure X axis reference? "))
         except ValueError:
             print("Unknown error")
             continue
@@ -18,7 +18,7 @@ def get_grids():
             break
     while True:
         try:
-            grid_y = int(input("What is the 5 figure Y asis reference? "))
+            grid_y = int(input("What is the 5 figure Y axis reference? "))
         except ValueError:
             print("Unknown error")
             continue
@@ -106,9 +106,9 @@ def get_elevation(displacement, initial_velocity):
 
 def main():
     print("Can only hit targets less than 4680m away \n")
-    print("Mortar Line grid!")
+    print("Mortar Line grid.")
     my_grid_x, my_grid_y = get_grids()
-    print("Enemy target grid")
+    print("Enemy target grid.")
     enemy_grid_x, enemy_grid_y = get_grids()
     length_x, length_y = get_length(my_grid_x, my_grid_y, enemy_grid_x, enemy_grid_y)
     displacement = calculate_distance(length_x, length_y)
